@@ -69,7 +69,8 @@
         d = 0;
     }
     theScore = a + b + c + d;
-    scoreLabel.text = [NSString stringWithFormat:@"%i", theScore];
+    scoreLabel.text = [NSString stringWithFormat:@"%i/4", theScore];
+    
     if (theScore < 3) {
         scoreLabel.textColor = [UIColor redColor];
     }
@@ -94,7 +95,7 @@
     Tester *detail = [self.storyboard instantiateViewControllerWithIdentifier:@"Overall1"];
     [self.navigationController pushViewController:detail animated:YES];
     
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"Habitats3" object:self];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"Habitat3" object:self];
 }
 
 - (void)viewDidUnload

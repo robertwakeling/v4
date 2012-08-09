@@ -674,8 +674,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="transitionToNewController:" destination="KcR-N5-IlY" eventType="touchUpInside" id="rgp-73-7aW"/>
-                                    <action selector="transitionToViewController" destination="aut-sn-MeT" eventType="touchUpInside" id="OcY-p6-bYa"/>
+                                    <segue destination="5O4-7f-qeZ" kind="push" id="Jku-gs-cJ7"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -719,6 +718,7 @@
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <connections>
+                                    <action selector="checkAnswers" destination="5O4-7f-qeZ" eventType="editingDidEnd" id="Xc9-oF-UyF"/>
                                     <outlet property="delegate" destination="5O4-7f-qeZ" id="iSX-Wn-x5D"/>
                                 </connections>
                             </textField>
@@ -729,6 +729,7 @@
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <connections>
+                                    <action selector="checkAnswers" destination="5O4-7f-qeZ" eventType="editingDidEnd" id="eah-A5-0Wd"/>
                                     <outlet property="delegate" destination="5O4-7f-qeZ" id="58X-o7-Ozb"/>
                                 </connections>
                             </textField>
@@ -739,6 +740,7 @@
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <connections>
+                                    <action selector="checkAnswers" destination="5O4-7f-qeZ" eventType="editingDidEnd" id="Qb0-s2-2r5"/>
                                     <outlet property="delegate" destination="5O4-7f-qeZ" id="3mE-1j-MuK"/>
                                 </connections>
                             </textField>
@@ -749,6 +751,7 @@
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <connections>
+                                    <action selector="checkAnswers" destination="5O4-7f-qeZ" eventType="editingDidEnd" id="pys-ZV-Ovn"/>
                                     <outlet property="delegate" destination="5O4-7f-qeZ" id="PJi-Z0-4Ha"/>
                                 </connections>
                             </textField>
@@ -762,6 +765,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="jBk-sE-Rj4"/>
                     <connections>
                         <outlet property="coastal" destination="ioM-aB-kaY" id="Urh-Ec-pXY"/>
                         <outlet property="desert" destination="GuQ-RP-pSy" id="Fdk-uy-C99"/>
@@ -8830,7 +8834,6 @@
         <class className="AcidsThreeTesterViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AcidsThreeTesterViewController.h"/>
             <relationships>
-                <relationship kind="action" name="checkAnswers:" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="acidAlkaliPicker" candidateClass="UIPickerView"/>
                 <relationship kind="outlet" name="imageViewer" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="theScoreLabel" candidateClass="UILabel"/>
@@ -9034,7 +9037,6 @@
         <class className="DiffusionThreeViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DiffusionThreeViewController.h"/>
             <relationships>
-                <relationship kind="action" name="showOrHide:"/>
                 <relationship kind="action" name="transition:" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="four" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="one" candidateClass="UILabel"/>
@@ -9284,7 +9286,6 @@
         <class className="NeutralisationThreeViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NeutralisationThreeViewController.h"/>
             <relationships>
-                <relationship kind="action" name="answerChecker:" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="neutral" candidateClass="UITextField"/>
             </relationships>
         </class>
