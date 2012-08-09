@@ -8845,7 +8845,6 @@
             <relationships>
                 <relationship kind="action" name="checkScores"/>
                 <relationship kind="action" name="hideShowLabel:" candidateClass="UIButton"/>
-                <relationship kind="action" name="hideShowLabel::" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="cellMembrane" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="cellWall" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="chloroplast" candidateClass="UILabel"/>
