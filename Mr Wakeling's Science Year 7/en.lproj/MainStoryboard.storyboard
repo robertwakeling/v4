@@ -705,7 +705,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Fill in the blanks below to name some habitats" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" id="cm1-uQ-HtB">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="32"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="0.88627457620000005" alpha="1" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
@@ -8776,6 +8776,7 @@
         <class className="AcidsThreeTesterViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AcidsThreeTesterViewController.h"/>
             <relationships>
+                <relationship kind="action" name="checkAnswers:" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="acidAlkaliPicker" candidateClass="UIPickerView"/>
                 <relationship kind="outlet" name="imageViewer" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="theScoreLabel" candidateClass="UILabel"/>
@@ -8785,6 +8786,7 @@
         <class className="AcidsThreeV2ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AcidsThreeV2ViewController.h"/>
             <relationships>
+                <relationship kind="action" name="handlePan:" candidateClass="UIGestureRecognizer"/>
                 <relationship kind="outlet" name="bleach" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="cleaner" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="cola" candidateClass="UIButton"/>
@@ -8843,6 +8845,7 @@
             <relationships>
                 <relationship kind="action" name="checkScores"/>
                 <relationship kind="action" name="hideShowLabel:" candidateClass="UIButton"/>
+                <relationship kind="action" name="hideShowLabel::" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="cellMembrane" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="cellWall" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="chloroplast" candidateClass="UILabel"/>
@@ -8939,6 +8942,7 @@
         <class className="CombustionThreeViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CombustionThreeViewController.h"/>
             <relationships>
+                <relationship kind="action" name="revealAnswer:"/>
                 <relationship kind="outlet" name="answerLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
@@ -8978,6 +8982,7 @@
         <class className="DiffusionThreeViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DiffusionThreeViewController.h"/>
             <relationships>
+                <relationship kind="action" name="showOrHide:"/>
                 <relationship kind="action" name="transition:" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="four" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="one" candidateClass="UILabel"/>
@@ -9031,6 +9036,7 @@
         <class className="FuelsThreeViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/FuelsThreeViewController.h"/>
             <relationships>
+                <relationship kind="action" name="checkAnswers:" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="co2" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="co2Tick" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="energy" candidateClass="UITextField"/>
@@ -9065,6 +9071,8 @@
         <class className="HabitatsViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/HabitatsViewController.h"/>
             <relationships>
+                <relationship kind="action" name="hideAndShow:"/>
+                <relationship kind="action" name="transitionToNewController:"/>
                 <relationship kind="outlet" name="coastal" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="desert" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="polar" candidateClass="UILabel"/>
@@ -9123,6 +9131,7 @@
         <class className="LifeCycleViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LifeCycleViewController.h"/>
             <relationships>
+                <relationship kind="action" name="hideAndShow:"/>
                 <relationship kind="outlet" name="adolescence" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="adulthood" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="birth" candidateClass="UILabel"/>
@@ -9161,6 +9170,8 @@
         <class className="MatterThreeViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MatterThreeViewController.h"/>
             <relationships>
+                <relationship kind="action" name="checkAnswers:" candidateClass="UIButton"/>
+                <relationship kind="action" name="labelColour:"/>
                 <relationship kind="outlet" name="Gas" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="Liquid" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="Solid" candidateClass="UIButton"/>
@@ -9188,6 +9199,7 @@
         <class className="MixturesThreeViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MixturesThreeViewController.h"/>
             <relationships>
+                <relationship kind="action" name="checkAnswers:"/>
                 <relationship kind="outlet" name="carbonDioxide" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="nitrogen" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="oxygen" candidateClass="UITextField"/>
@@ -9214,6 +9226,7 @@
         <class className="NeutralisationThreeViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NeutralisationThreeViewController.h"/>
             <relationships>
+                <relationship kind="action" name="answerChecker:" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="neutral" candidateClass="UITextField"/>
             </relationships>
         </class>
@@ -9283,6 +9296,7 @@
         <class className="SeriesParallelThreeViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SeriesParallelThreeViewController.h"/>
             <relationships>
+                <relationship kind="action" name="checkAnswers:" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="parallel" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="scoreLabel" candidateClass="UILabel"/>
@@ -9299,6 +9313,7 @@
         <class className="SpecialisedViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SpecialisedViewController.h"/>
             <relationships>
+                <relationship kind="action" name="unhideTheAnswers:"/>
                 <relationship kind="outlet" name="correctAnswerEntry" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="presenceNucleus" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="question" candidateClass="UILabel"/>
@@ -9332,6 +9347,11 @@
         </class>
         <class className="TextfieldCheckerViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TextfieldCheckerViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="buttonClear::" candidateClass="UITextField"/>
+                <relationship kind="action" name="checkAnswers:" candidateClass="UITextField"/>
+                <relationship kind="action" name="secondSaveUserEntries:" candidateClass="UITextField"/>
+            </relationships>
         </class>
         <class className="TypesThreeViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TypesThreeViewController.h"/>
