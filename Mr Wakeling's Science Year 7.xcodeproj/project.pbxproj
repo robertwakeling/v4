@@ -131,6 +131,7 @@
 		D492870B15BB58E300D52C17 /* MixturesThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D492870A15BB58E300D52C17 /* MixturesThreeViewController.m */; };
 		D492870D15BB64CD00D52C17 /* Solutions3.png in Resources */ = {isa = PBXBuildFile; fileRef = D492870C15BB64CD00D52C17 /* Solutions3.png */; };
 		D492873D15BB6AEC00D52C17 /* SolutionsThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D492873C15BB6AEC00D52C17 /* SolutionsThreeViewController.m */; };
+		D496B1A215D3E1FC00389DAC /* HabitatsAssessmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D496B1A115D3E1FC00389DAC /* HabitatsAssessmentViewController.m */; };
 		D4973652158D10F400B334AF /* HIV.png in Resources */ = {isa = PBXBuildFile; fileRef = D4973651158D10F400B334AF /* HIV.png */; };
 		D497365D158D2E6700B334AF /* HumanEgg.png in Resources */ = {isa = PBXBuildFile; fileRef = D497365C158D2E6700B334AF /* HumanEgg.png */; };
 		D498180B15BEE8FD00CA4A69 /* Testerrrr.m in Sources */ = {isa = PBXBuildFile; fileRef = D498180A15BEE8FD00CA4A69 /* Testerrrr.m */; };
@@ -389,6 +390,8 @@
 		D492870C15BB64CD00D52C17 /* Solutions3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Solutions3.png; sourceTree = "<group>"; };
 		D492873B15BB6AEC00D52C17 /* SolutionsThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SolutionsThreeViewController.h; sourceTree = "<group>"; };
 		D492873C15BB6AEC00D52C17 /* SolutionsThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SolutionsThreeViewController.m; sourceTree = "<group>"; };
+		D496B1A015D3E1FC00389DAC /* HabitatsAssessmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HabitatsAssessmentViewController.h; sourceTree = "<group>"; };
+		D496B1A115D3E1FC00389DAC /* HabitatsAssessmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HabitatsAssessmentViewController.m; sourceTree = "<group>"; };
 		D4973651158D10F400B334AF /* HIV.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HIV.png; sourceTree = "<group>"; };
 		D497365C158D2E6700B334AF /* HumanEgg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HumanEgg.png; sourceTree = "<group>"; };
 		D498180915BEE8FD00CA4A69 /* Testerrrr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Testerrrr.h; path = ../Testerrrr.h; sourceTree = "<group>"; };
@@ -1131,6 +1134,8 @@
 				D49AA75F1592754B002A7D7A /* HabitatsViewController.h */,
 				D49AA7601592754B002A7D7A /* HabitatsViewController.m */,
 				D4FB78391597632300BBE2EB /* Habitats2.png */,
+				D496B1A015D3E1FC00389DAC /* HabitatsAssessmentViewController.h */,
+				D496B1A115D3E1FC00389DAC /* HabitatsAssessmentViewController.m */,
 			);
 			name = "Habitats 3";
 			sourceTree = "<group>";
@@ -1828,6 +1833,7 @@
 				D4B3189215C839C40040CEB6 /* MoonThreeViewController.m in Sources */,
 				D4B3189B15C8473E0040CEB6 /* BeyondThreeViewController.m in Sources */,
 				D4E1712615D1875D0095AFE2 /* CycleThreeAssessmentViewController.m in Sources */,
+				D496B1A215D3E1FC00389DAC /* HabitatsAssessmentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
